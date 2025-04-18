@@ -1,0 +1,22 @@
+<svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bear character -->
+  <ellipse cx="100" cy="120" rx="30" ry="32" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  <circle cx="90" cy="105" r="3" fill="#2F2F2F"/>
+  <circle cx="110" cy="105" r="3" fill="#2F2F2F"/>
+  <ellipse cx="100" cy="115" rx="5" ry="3" fill="none" stroke="#2F2F2F" stroke-width="1.5"/>
+  <ellipse cx="80" cy="90" rx="10" ry="8" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  <ellipse cx="120" cy="90" rx="10" ry="8" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  
+  <!-- Gnome character -->
+  <ellipse cx="160" cy="125" rx="25" ry="30" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  <path d="M160 95 L160 75 L180 55" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  <circle cx="150" cy="110" r="3" fill="#2F2F2F"/>
+  <circle cx="170" cy="110" r="3" fill="#2F2F2F"/>
+  <path d="M155 125 Q160 130 165 125" fill="none" stroke="#2F2F2F" stroke-width="1.5"/>
+  <path d="M140 140 L130 160" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  <path d="M180 140 L190 160" fill="none" stroke="#2F2F2F" stroke-width="2"/>
+  
+  <!-- Ground lines -->
+  <path d="M70 152 Q85 150 100 152" stroke="#2F2F2F" stroke-width="1" stroke-dasharray="2 2"/>
+  <path d="M150 152 Q165 150 180 152" stroke="#2F2F2F" stroke-width="1" stroke-dasharray="2 2"/>
+</svg> 

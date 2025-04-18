@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F9F6F1;
+  --accent: #8A8D6F;
+  --text-primary: #2F2F2F;
+  --button-highlight: #475341;
+  --secondary: #B7A99A;
+  --border: #E7D9B8;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-eb-garamond);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F9F6F1;
+    --text-primary: #2F2F2F;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.vintage-button {
+  background-color: var(--button-highlight);
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.vintage-button:hover {
+  opacity: 0.9;
+}
+
+.option-button {
+  border: 1px solid var(--border);
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  background-color: var(--border);
+}
+
+.option-button-selected {
+  background-color: var(--accent);
+  color: var(--background);
 }

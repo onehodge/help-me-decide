@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Help Me Decide
+
+An AI-assisted decision-making web application that helps users make better decisions through guided reflection.
+
+## Overview
+
+Help Me Decide is a web app that assists users in making decisions between two options. The app generates thoughtful multiple-choice questions based on the options provided, and after the user answers these questions, it provides a recommendation with reasoning.
+
+## Features
+
+- **Option Input**: Users enter two options they are deciding between
+- **Reflective Questions**: AI generates 3-5 thoughtful multiple-choice questions to help users reflect on their priorities
+- **Sequential Question Flow**: One question at a time with a progress indicator
+- **Back Navigation**: Users can go back to review and change their answers
+- **AI Recommendation**: Based on the answers, the app suggests a decision with concise reasoning
+- **Clean, Minimal UI**: Easy-to-use interface with a focus on the decision-making process
+
+## Technology Stack
+
+- **Frontend**: Next.js, React, TailwindCSS
+- **Backend API**: Next.js API routes
+- **Future Enhancement**: Integration with DeepSeek or other LLM APIs for more personalized questions and recommendations
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ and npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/help-me-decide.git
+   cd help-me-decide
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The app consists of two main API endpoints:
 
-## Deploy on Vercel
+1. `/api/questions` - Generates questions based on the two options provided
+2. `/api/decision` - Provides a recommendation based on the answers to the questions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Currently, these endpoints use placeholder logic, but they're designed to be easily integrated with LLM APIs for more sophisticated question generation and decision-making in the future.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Enhancements
+
+- Integration with DeepSeek API or other LLM providers
+- User accounts to save past decisions
+- More detailed analysis of decision factors
+- Option to share decision processes with others
+- Mobile app version
